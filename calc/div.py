@@ -1,8 +1,10 @@
 #!/usr/bin/python
 
-class SUB():
+class DIV():
         def TWOnumbers(self, a, b):
-                c = a - b
+                a = float(a)
+                b = float(b)
+                c = a / b
                 return c
 
 if __name__ == '__main__':
