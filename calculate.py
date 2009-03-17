@@ -24,9 +24,9 @@ def main():
         c = float(raw_input("Enter your last number: "))
 
         if b == '+':
-                print local.add.TWOnumbers(a,c)
+                print localadd.TWOnumbers(a,c)
         elif b == '-':
-                print local.sub.TWOnumbers(a,c)
+                print localsub.TWOnumbers(a,c)
         elif b == '*':
                 print localmul.TWOnumbers(a,c)
         elif b == '/':
