@@ -12,7 +12,7 @@ sys.path = [ROOT] + sys.path
 
 
 # Now Let's import the code we want to test
-from calc import add
+from calc import add, sub
 
 # Since we are doing TEST driven development, we need to start with a test.
 # duh.
@@ -41,6 +41,12 @@ class UnitTests(unittest.TestCase):
                 test = add.ADD()
                 localCheck = test.TWOnumbers(3, 4) # 3 + 4 == 7 
                 self.assertEqual(7, localCheck) # True?
+                #Copy Pasta. With a lot of repeating methods, just iterate the testing process.
+                # in this case, start switching symbols.
+        def testSUB(self):
+                test = sub.SUB()
+                localCheck = test.TWOnumbers(3, 4) # 3 - 4 == -1 
+                self.assertEqual(-1, localCheck) # True?
 
 if __name__ == '__main__':
         unittest.main()
