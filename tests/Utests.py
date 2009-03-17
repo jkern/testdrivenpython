@@ -2,12 +2,17 @@
 
 import unittest
 import sys
+import os
 
 # first we need to make sure that we are in the right directory to start the test
 TEST_ROOT = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(TEST_ROOT + "/..")
 # This is pretty much just boiler plate. Copy Pasta.
 sys.path = [ROOT] + sys.path
+
+
+# Now Let's import the code we want to test
+from calc import add
 
 # Since we are doing TEST driven development, we need to start with a test.
 # duh.
@@ -33,9 +38,9 @@ class SanityTest(unittest.TestCase):
 
 class UnitTests(unittest.TestCase):
         def testADD(self):
-
-
-
+                test = add.ADD()
+                localCheck = test.TWOnumbers(3, 4) # 3 + 4 == 7 
+                self.assertEqual(7, localCheck) # True?
 
 if __name__ == '__main__':
         unittest.main()
