@@ -12,7 +12,7 @@ sys.path = [ROOT] + sys.path
 
 
 # Now Let's import the code we want to test
-from calc import add, sub
+from calc import add, sub, mul, div
 
 # Since we are doing TEST driven development, we need to start with a test.
 # duh.
