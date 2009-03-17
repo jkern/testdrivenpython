@@ -12,7 +12,7 @@ localmul = mul.MUL()
 localdiv = div.DIV()
 
 
-#Since our "REAL" code is seperated from the user interface portion,
+#Since our "REAL" code is separated from the user interface portion,
 #and we know that all the other code works, we can just start writing
 #the interface portion. Quick and dirty. Let's GO!
 
