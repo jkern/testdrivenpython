@@ -47,6 +47,14 @@ class UnitTests(unittest.TestCase):
                 test = sub.SUB()
                 localCheck = test.TWOnumbers(3, 4) # 3 - 4 == -1 
                 self.assertEqual(-1, localCheck) # True?
+        def testMUL(self):
+                test = mul.MUL()
+                localCheck = test.TWOnumbers(3, 4) # 3 * 4 == 12 
+                self.assertEqual(12, localCheck) # True?
+        def testDIV(self):
+                test = div.DIV()
+                localCheck = test.TWOnumbers(3, 4) # 3 / 4 == 0.75 
+                self.assertEqual(0.75, localCheck) # True?
 
 if __name__ == '__main__':
         unittest.main()
